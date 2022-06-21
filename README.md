@@ -24,7 +24,7 @@ Filtramos los datos que nos interesan y los cruzamos:
   select(nombre, origen)
 
 >pmm_casas<-left_join(personajes_mas_minutos, casas, by="nombre")
-Plasmamos en la nube de palabras:
+
 
 Hacemos el treemap:
 >ggplot(pmm_casas, aes(area = minutos_pantalla, fill = episodios, subgroup=origen, label = nombre)) +
